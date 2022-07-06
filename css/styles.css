@@ -67,6 +67,18 @@ svg {
   }
 }
 
+@media (min-width: 992px) and (max-width: 1196px) {
+  .search-wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 822px) {
+  .search-wrapper {
+    width: 100%;
+  }
+}
+
 /* Dark Theme */
 
 .dark {

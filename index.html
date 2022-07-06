@@ -17,7 +17,7 @@
     ></script>
   </head>
   <body>
-    <aside class="sidebar offcanvas-lg offcanvas-start" data-bs-scroll="true">
+    <aside class="sidebar offcanvas-lg offcanvas-start">
       <div class="d-flex justify-content-end m-4 d-block d-lg-none">
         <button
           data-bs-dismiss="offcanvas"
@@ -187,18 +187,18 @@
     <main class="content flex-fill">
       <section>
         <button
+          aria-controls="sidebar"
           data-bs-toggle="offcanvas"
           data-bs-target=".sidebar"
-          aria-controls="sidebar"
           aria-label="Button Hamburger"
           class="sidebarOffcanvas mb-5 btn p-0 border-0 d-flex d-lg-none"
         >
           <i class="fa-solid fa-bars"></i>
         </button>
-        <nav class="nav-content gap-4">
+        <nav class="nav-content gap-5">
           <div class="d-flex gap-3 align-items-center">
             <img
-              src="./assets/images/photo.jpg"
+              src="./assets/images/photo.webp"
               alt="Photo Profile"
               class="photo-profile"
             />
@@ -210,8 +210,8 @@
               </p>
             </div>
           </div>
-          <div class="d-flex gap-4">
-            <div class="search-bar">
+          <div class="search-wrapper">
+            <div class="search-bar flex-fill">
               <input
                 class="form-control"
                 type="text"
