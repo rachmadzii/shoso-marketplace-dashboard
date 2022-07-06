@@ -35,9 +35,7 @@
   stroke: var(--red);
 }
 
-.btn-fav.active > svg,
-.btn-fav:active > svg,
-.btn-fav:focus > svg {
+.btn-fav.active > svg {
   fill: var(--red);
 }
 
@@ -47,26 +45,15 @@
   font-size: 18px;
 }
 
-.button {
-  font-size: 14px;
-  font-weight: 500;
-  padding: 10px 20px;
-  border-radius: 12px;
-}
-
 .btn-rounded {
   color: var(--blue-primary);
   background-color: #f6fafd;
   border: 1px solid var(--blue-primary);
 }
 
-.dark .btn-rounded:active,
 .dark .btn-rounded:hover,
-.dark .btn-rounded:focus,
 .dark .btn-rounded.active,
-.btn-rounded:active,
 .btn-rounded:hover,
-.btn-rounded:focus,
 .btn-rounded.active {
   color: white;
   background-color: var(--blue-primary);

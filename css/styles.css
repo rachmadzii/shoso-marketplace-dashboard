@@ -27,6 +27,13 @@
   color: var(--navy);
 }
 
+.button {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+
 svg {
   width: 24px;
   height: 24px;
@@ -112,7 +119,7 @@ body.dark,
 
 .dark .search-bar > input,
 .dark .btn-setting {
-  background: #1c1616;
+  background: #181a1b;
   color: #d1cdc7;
 }
 

@@ -26,10 +26,18 @@ checkbox.addEventListener('change', () => {
   }
 });
 
-document.getElementById('btn-follow').addEventListener('click', handleFollow);
+function handleFavorite(e) {
+  const btnFav = e.closest('.btn-fav');
+  btnFav.classList.toggle('active');
+}
 
-function handleFollow() {
-  const btnFollow = document.getElementById('btn-follow');
+function handleBuy(e) {
+  const btnBuy = e.closest('.buy-product');
+  btnBuy.classList.toggle('active');
+}
+
+function handleFollow(e) {
+  const btnFollow = e.closest('.btn-follow');
   btnFollow.classList.toggle('active');
 
   if (btnFollow.classList.contains('active')) {
@@ -37,4 +45,12 @@ function handleFollow() {
   } else {
     btnFollow.innerText = '+Follow';
   }
+}
+
+function handleClickMenu(e) {
+  const navItem = document.querySelectorAll('.item-menu');
+  navItem.forEach(function (v) {
+    v.classList.remove('active');
+  });
+  e.closest('.item-menu').classList.add('active');
 }
